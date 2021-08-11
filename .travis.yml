@@ -7,11 +7,11 @@ before_install:
 install: npm install
 
 branches:
-only:
-- master
+  only:
+  - master
 
 deploy: 
   provider: heroku
   app: game-storing-website
   api_key:
-    secure: "67568b6a-eb25-4fe3-8890-10395c39c775"
+    secure: ""
