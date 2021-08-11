@@ -1,0 +1,17 @@
+language: node_js
+node_js: 
+- '10'
+
+before_install:
+- npm install -g @angular/cli
+install: npm install
+
+branches:
+only:
+- master
+
+deploy: 
+  provider: heroku
+  app: game-storing-website
+  api_key:
+    secure: "67568b6a-eb25-4fe3-8890-10395c39c775"
