@@ -1,15 +1,18 @@
 language: node_js
 node_js:
-- 'v14.16.0'
+- v14.16.0
 before_install:
 - npm install -g @angular/cli
 install: npm install
 branches:
   only:
   - main
-
 deploy:
   provider: heroku
-  app: game-storing-website
   api_key:
-    secure: LZJUXQRJqmZ3AoJeZGpzJWUxg97bwgPdLJUSXNDsT4HO0Ya0T06jAFAJheMkevbNHtzNX5VeQYR1p3tY2tlwRDsNTYuTz8H893RWiwMfbbzrEMiM8kk/nuraRb01FLcfm8giATLBIVRobMkYlPT8AstRkbCXf/2bhkigdJm+C6TF9oAAJKHsbxXKrYzV6tzExsZZbB1ciAcxFse5VBd2uer6edZIjZ9NW3qynM3XPt/wCUxOvZRmVPE9O5j/XoKjj6Xo4K203oGuB6tHd/DT/k0JOApj5+wRZOtofN80qV4J1QWfOVdo+ySH46EjSt3SCqPlhQasrX8GcX22FADVU8C8hjzwadmhDxxjjF9A03O4OmWbyqHp4708oVTRUSDR+IKSZDpd5UH84Sywlb6an+8H8gpgOx5kyBuvbFmzLkp6puTOGB2YGVcsnOk2Qc+JIDKfVvdHyTIvcbNOPn99snxNcHRWlMmc5vFkH8cREbdKukPh7gR1pxcmH5vjnYv9mlULFfIHln0WGlworR85pHCtJmW0qEzfVZ3qrH2SBNTVqL7Xc5xLJWrgjiVr3VpbQKt3u6p/Usonaj2adY5baIF/CrMSl1rgDXv3j1Jm5pT6J+8CKni/7jjy5vpR7XTn1k29k7rR5/zUpfgdCCfOFewmcST47O7Mx1WhY3u7s1w=
+    secure: Eet5fQBeAp6w35yLRfLvc/yKywr3JCzeUCuFYoA5mzTgLkYs39GbKf/cE16ctBgLD6nD/amFCaiHovB93TPufKG+ZvlxAhC0fuHEhfbNuxKrsP27xYZns09xsZGh9g1OLblQGm6wi+T2PUYU3e34JkHLHI2RMmzgey8MIKMAjQ9iX0itSpbaFjWoD4f+LOotoj/kAyDoJJOEvPOqG3HRlF4uSPbur8dzcs5T3anueGSPGmfff8zo89KKqI87Dw7nQWUp2dcN1ylGk6Dq5xfaLKQKQ8t2vKnvdGifNtA+Om4ZtbOyAG4RqA3NpTSCrQWWGaOeptrNAa+8C8Wohn378P2mQvosi/njMrqbC+/xIy8jtEo9T5FQTH1DJiTwaITDhyx8eRFLhRItCqhblivg2zsjp0DNqEZXGiEdrs2O0/HgqDgOhNDzqo9tahSJFpBjHCP/T04U5YgbLhZoSqCm9MQoN030Dz1FyY+ymCq2BDo8aBtQ0UxRJ2sSnQtoK1/1Atz9KtdQIWpBueWvT3MxSq9SRqNENPiV8vDmf0pMMYrWHpc0e90AJ/iVpV/wm9FF+rFjM/wlQiFtRMPmOPgQqUcA3Sq+WiX8gu8tAno8flifEW0OmJa4xL3aKI+xSdS450Dv7XrwgRVzMAqTPzfrK0CtnvdS35oZ3mbMAo1lQSU=
+  app: game-storing-website
+  on:
+    repo: KatyGolovan/game-storing-website
+    branch: main
+
