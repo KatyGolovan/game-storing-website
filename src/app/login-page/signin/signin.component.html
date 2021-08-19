@@ -1,0 +1,5 @@
+<form #signinForm="ngForm" (ngSubmit)="loginUser(signinForm.value)">
+    <input type="email" name="email" placeholder="ender e-mail" ngModel/>
+    <input type="password" name="password" placeholder="enter password" ngModel/>
+    <button mat-raised-button color="primary">Sign In</button>
+</form>
